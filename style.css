@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+}
+fieldset {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 50%;
+  border: 0;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+div > h1 {
+  font-size: 50px;
+}
+div > p {
+  font-family: "Poppins", sans-serif;
+}
+
+div:nth-child(2) {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+input {
+  
+  width: 35px;
+  height: 35px;
+  margin: 10px auto;
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  border-color: lightgray;
+  box-sizing: border-box;
+  transition-duration: 0.5s;
+  outline: none;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  border: none;
+  transform: scale(1.1);
+}
+
+.submit {
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  width: 70px;
+  opacity: 0.7;
+  transition: 1s;
+  pointer-events: none;
+}
+.submit.active {
+  font-weight: 300;
+  opacity: 1;
+  pointer-events: auto;
+}
+.winner{
+  display: flex;
+  align-items: center;
+}
+.winner > h1{
+  min-height: 50%;
+  display: flex;
+  align-items: center;
+}
+.new{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:18vw;
+  height: 4vh;
+  border-radius:5px;
+  background-color: rgb(214, 211, 211);
+  transition-duration: 1s;
+}
+.new:hover{
+  background-color: white;
+  box-shadow: 0 0 3px 1px rgb(80, 80, 80);
+}
