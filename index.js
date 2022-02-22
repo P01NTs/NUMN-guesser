@@ -69,7 +69,8 @@ function validate() {
 ///////////////////////////////////////////end
 
 //validating Listenrs
-champ.addEventListener("keypress", function (e) {
+
+  champ.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     validate();
   }
@@ -77,3 +78,6 @@ champ.addEventListener("keypress", function (e) {
 submit.addEventListener("click", () => {
   validate();
 });
+
+//////////////////////////////////////// version 21/02/2015
+document.getElementById("version").innerHTML="V0.1.1";

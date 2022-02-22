@@ -100,6 +100,17 @@ input:focus {
   box-shadow: 0 0 3px 1px rgb(80, 80, 80);
 }
 
-fieldset > p{
-  margin : 0;
+
+footer{
+  margin: 0;
+  padding: 0;
+  position:absolute;
+  width:100%;
+  display: flex;
+  justify-content:end;
+  bottom: 0;
+}
+#version {
+  padding:0;
+  margin:0 1em 0 0;
 }
